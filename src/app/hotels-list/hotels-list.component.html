@@ -5,17 +5,17 @@
   <div class="element-left-bottom">
     <div class="ele-strip">
       <ul>
-        <li><a (click)="tab='hotel'">Hotel</a></li>
-        <li><a (click)="tab='fishing'">Fishing</a></li>
-        <li><a (click)="tab='tours'">Tours</a></li>
-        <li class="anc-bor"><a (click)="tab='weather'">Weather</a></li>
+        <li><a (click)="tab='hotel'"   [ngClass]="{'active-link': tab === 'hotel'}">Hotel</a></li>
+        <li><a (click)="tab='fishing'" [ngClass]="{'active-link': tab === 'fishing'}">Fishing</a></li>
+        <li><a (click)="tab='tours'"   [ngClass]="{'active-link': tab === 'tours'}">Tours</a></li>
+        <li><a (click)="tab='weather'" [ngClass]="{'active-link': tab === 'weather'}">Weather</a></li>
       </ul>
     </div>
     <div class="village" [ngSwitch]="tab">
       <h3>Righteous indignation & like</h3>
       <span class="line"> </span>
       <div class="activity_box">
-        <div class="scrollbar" id="style-2" *ngSwitchCase="'hotel'">
+        <div class="scrollbar" id="style-2"  *ngSwitchDefault>
           <div  class="activity-row"
                 *ngFor="let hotel of hotels"
                 (click)="selectHotel(hotel)"
