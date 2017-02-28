@@ -6,6 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./hotel-weather.component.css']
 })
 export class HotelWeatherComponent implements OnInit {
+
   @Input()
   public weather: Weather;
 

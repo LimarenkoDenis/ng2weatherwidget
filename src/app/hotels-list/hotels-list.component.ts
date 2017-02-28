@@ -7,8 +7,11 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class HotelsListComponent implements OnInit {
 
-  @Input() public hotels: Hotel[];
-  @Input() public currentHotel: Hotel;
+  @Input()
+  public hotels: Hotel[];
+
+  @Input()
+  public currentHotel: Hotel;
 
   @Output()
   public hotel: EventEmitter<Hotel> = new EventEmitter();
