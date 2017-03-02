@@ -7,7 +7,8 @@ type Hotel = {
   picture: string,
   photos: string[],
   weather: Weather,
-  profile: Profile
+  profile: Profile,
+  stars: number;
 }
 
 type Profile = {

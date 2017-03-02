@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { HotelsListComponent } from './hotels-list/hotels-list.component';
 import { HotelWeatherComponent } from './hotel-weather/hotel-weather.component';
 import { HotelProfileComponent } from './hotel-profile/hotel-profile.component';
+import { TabPipe } from './tab.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     HotelsListComponent,
     HotelWeatherComponent,
-    HotelProfileComponent
+    HotelProfileComponent,
+    TabPipe
   ],
   imports: [
     BrowserModule,

@@ -28,7 +28,8 @@ export class AppComponent implements OnInit {
         followers: 112,
         following: 11,
         photo: 'assets/images/b1.jpg'
-      }
+      },
+      stars: 3
     },
     {
       id: 1,
@@ -50,7 +51,8 @@ export class AppComponent implements OnInit {
         followers: 12,
         following: 111,
         photo: 'assets/images/b2.jpg'
-      }
+      },
+      stars: 4
     },
     {
       id: 2,
@@ -72,7 +74,8 @@ export class AppComponent implements OnInit {
         followers: 45,
         following: 78,
         photo: 'assets/images/b3.jpg'
-      }
+      },
+      stars: 5
     }
   ];
   public currentHotel: Hotel = this.hotels[0];
